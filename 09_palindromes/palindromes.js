@@ -1,4 +1,7 @@
-const palindromes = function () {
+const palindromes = function (string) {
+
+const Filtered= string.toLowerCase().replace(/[^a-z]/g,'').split("");
+    return Filtered.join("") === Filtered.reverse().join("");
 
 };
 
